@@ -1,0 +1,13 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mobile-menu {
+    transition: top 0.5s ease;
+}
+
+#menu-cta {
+    transition: border 0.25s ease;
+}

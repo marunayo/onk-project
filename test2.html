@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXPERIMENTAL </title>
+    <title>EXPERIMENTAL 2 </title>
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Prompt:wght@200;300;400;500;600&display=swap');
@@ -37,23 +37,27 @@
     </script>
 </head>
 <body class="bg-[#ECE2D5]">
-    <!-- NAVBAR -->
-    <div class="w-screen" style="background-color: aqua;">
-    <header class="fixed top-0 left-0">
-      <div class="container">
-        <div class="bg-[#ECE2D5] relative w-screen px-4">
-          <div class="bg-[#ECE2D5] border-b-2 border-[#375C58] w-full z-40 absolute flex justify-between items-center py-4" style="width: calc(100% - 2rem);">
-            <span class="logo">
-              <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_blacks.png" alt="ONK Project">
-            </span>
-
-            <span class="nav-cta text-3xl" onclick="toggleMenu()">
-              <ion-icon name="menu"></ion-icon>
-            </span>
+    
+  <!-- NAVBAR -->
+  <header class="z-50 fixed">
+    <div class="">
+      <div class="w-screen h-screen">
+        <div class="absolute w-full h-full">
+          <div id="menu-cta" class="z-40 bg-[#ECE2D5] relative p-4 border-b-2 border-[#375C58]">
+            <div class="flex justify-between items-center">
+              <span class="logo">
+                <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_blacks.png" alt="ONK Project">
+              </span>
+              <span class="nav-cta text-3xl" onclick="toggleMenu()">
+                <ion-icon name="menu"></ion-icon>
+              </span>
+            </div>
+            <!-- <div class="border-b-2 border-[#375C58] mt-5"></div> -->
           </div>
-
-          <nav id="mobile-menu" class="bg-[#ECE2D5] h-screen z-30 absolute top-[-100vh] w-full" style="width: calc(100% - 2rem);">
-            <ul class="grid gap-8 mt-[8em]">
+  
+          <nav id="mobile-menu" class="z-30 bg-[#ECE2D5] relative -top-full left-0 h-full px-4">
+            <!-- <div class="border-b-2 border-[#375C58]"></div> -->
+            <ul class="grid gap-8 pt-5">
               <li class="font-prompt">
                 <p class="font-prompt-smbold text-xl mb-1">01</p>
                 <a href="#" class="font-prompt-exlight text-5xl">MENU</a>
@@ -75,19 +79,27 @@
                 <a href="#" class="font-prompt-exlight text-5xl">MENU</a>
               </li>
             </ul>
-            <div class="nav-author mt-8 border-b-2 border-[#375C58]">
-              <img class="w-32" src="/assets/img/MDVR Logos.svg" alt="MDVR Logo">
-              <p>Author</p>
+            <div class="flex justify-between items-center pt-[4em]">
+              <img class="w-24" src="/assets/img/dev/MDVR Logo 1.png" alt="MDVR Logo">
+              <p class="font-manrope font-manrope-reg">©️ 2023 Marudever.</p>
             </div>
+            <div class="border-b-2 border-[#375C58] pt-[3.5em]"></div>
           </nav>
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
+  
+  <section class="h-screen">
+    <div>
 
-    <section class="z-1 px-4 py-[1000px] mt-[10em]" style="background-color: red;">
-      <h1>AKSJDKAJSFJIASJF</h1>
-    </section>
+    </div>
+  </section>
+  <section class="bg-green-500 py-[20em]">
+    <div>
+
+    </div>
+  </section>
 
 </body>
 </html>
