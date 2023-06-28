@@ -30,6 +30,9 @@
                 'prompt-reg': 400,
                 'prompt-med': 500,
                 'prompt-smbold': 600,
+              },
+              backgroundImage: {
+                'bg-hero-img': "url('/assets/img/home/1-hero.png')",
               }
             }
           }
@@ -46,7 +49,7 @@
           <div id="menu-cta" class="z-40 bg-[#ECE2D5] relative p-4 border-b-2 border-[#375C58]">
             <div class="flex justify-between items-center">
               <span class="logo">
-                <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_blacks.png" alt="ONK Project">
+                <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_black.png" alt="ONK Project">
               </span>
               <span class="nav-cta text-3xl" onclick="toggleMenu()">
                 <ion-icon name="menu"></ion-icon>
@@ -91,19 +94,20 @@
   </header>
   
   <section class="h-screen px-4">
-    <div class="pt-[10em]">
-      <div>
+    <div class="hero-content">
+      <div class="self-end">
         <h1 class="font-manrope font-manrope-light text-7xl text-[#304B48] pr-10">THE LOVE <span class="text-[#FF00E5]">& LIES</span></h1>
       </div>
-      <div class="font-manrope font-manrope-light text-[#304B48] mt-[2em] flex justify-between align-center">
+      <div class="font-manrope font-manrope-light text-[#304B48] self-center flex justify-between align-center">
         <p>my star</p>
         <p>I'm gonna be your dream</p>
       </div>
-      <div>
-        <img src="" alt="">
+      <div class="bg-hero-img bg-[url('/assets/img/home/1-hero.png')]">
+        
       </div>
     </div>
   </section>
+  
   <section class="bg-green-500 h-screen">
     <div>
       

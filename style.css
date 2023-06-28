@@ -11,3 +11,14 @@
 #menu-cta {
     transition: border 0.25s ease;
 }
+
+.hero-content {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1.5fr 5em 2.5fr;
+}
+
+.bg-hero-img {
+    background-size: cover;
+    background-position: 70%;
+}
