@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONK Project</title>
+    <title>ONK</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Prompt:wght@200;300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Prompt:wght@200;300;400;500;600&display=swap');
     </style>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,10 +25,15 @@
                 'manrope-light': 300,
                 'manrope-reg': 400,
                 'manrope-med': 500,
+                'manrope-bold': 700,
                 'prompt-exlight': 200,
                 'prompt-light': 300,
                 'prompt-reg': 400,
                 'prompt-med': 500,
+                'prompt-smbold': 600,
+              },
+              backgroundImage: {
+                'bg-hero-img': "url('/assets/img/home/1-hero.png')",
               }
             }
           }
@@ -34,54 +41,107 @@
     </script>
 </head>
 <body class="bg-[#ECE2D5]">
-    <!-- NAVBAR -->
-    <header>
-        <div class="container">
-          <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    
+  <!-- NAVBAR -->
+  <header class="z-50 fixed">
+    <div class="">
+      <div class="w-screen h-screen">
+        <div class="absolute w-full h-full">
+          <div id="menu-cta" class="z-40 bg-[#ECE2D5] relative p-4 border-b-2 border-[#375C58]">
             <div class="flex justify-between items-center">
-              <span class="text-2xl font-[Poppins] cursor-pointer">
-                <img class="h-10 inline"
-                  src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
-                ONK Project
+              <span class="logo">
+                <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_black.png" alt="ONK Project">
               </span>
-
-              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              <span class="nav-cta text-3xl" onclick="toggleMenu()">
+                <ion-icon name="menu"></ion-icon>
               </span>
             </div>
-
-            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full h-fit left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-450">
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+            <!-- <div class="border-b-2 border-[#375C58] mt-5"></div> -->
+          </div>
+  
+          <nav id="mobile-menu" class="z-30 bg-[#ECE2D5] relative -top-full left-0 h-full px-4">
+            <!-- <div class="border-b-2 border-[#375C58]"></div> -->
+            <ul class="grid gap-8 pt-5">
+              <li class="font-prompt">
+                <p class="font-prompt-smbold text-xl mb-1">01</p>
+                <a href="#" class="font-prompt-exlight text-5xl">STORY</a>
               </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
+              <li class="font-prompt">
+                <p class="font-prompt-smbold text-xl mb-1">02</p>
+                <a href="#" class="font-prompt-exlight text-5xl">CHARACTER</a>
               </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+              <li class="font-prompt">
+                <p class="font-prompt-smbold text-xl mb-1">03</p>
+                <a href="#" class="font-prompt-exlight text-5xl">MANGA</a>
               </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+              <li class="font-prompt">
+                <p class="font-prompt-smbold text-xl mb-1">04</p>
+                <a href="#" class="font-prompt-exlight text-5xl">ANIME</a>
               </li>
-              <li class="mx-4 my-6 md:my-0">
-                <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+              <li class="font-prompt">
+                <p class="font-prompt-smbold text-xl mb-1">05</p>
+                <a href="#" class="font-prompt-exlight text-5xl">MANGA</a>
               </li>
-        
-              <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
-                Get started
-              </button>
-              <h2 class=""></h2>
             </ul>
+            <div class="flex justify-between items-center pt-[4em]">
+              <img class="w-24" src="/assets/img/dev/MDVR Logo 1.png" alt="MDVR Logo">
+              <p class="font-manrope font-manrope-reg text-xs">©️ 2023 Marudever.</p>
+            </div>
+            <div class="border-b-2 border-[#375C58] pt-[3.5em]"></div>
           </nav>
         </div>
-    </header>
-    
+      </div>
+    </div>
+  </header>
+  
+  <section class="h-screen px-4">
+    <div class="hero-content">
+      <div class="self-end">
+        <h1 class="font-manrope font-manrope-light text-7xl text-[#304B48] pr-10">THE LOVE <span class="text-[#FF00E5]">& LIES</span></h1>
+      </div>
+      <div class="font-manrope font-manrope-light text-[#304B48] self-center flex justify-between align-center">
+        <p>my star</p>
+        <p>I'm gonna be your dream</p>
+      </div>
+      <div class="bg-hero-img bg-[url('/assets/img/home/1-hero.png')]">
+        
+      </div>
+    </div>
+  </section>
+  
+  <section class="px-4">
+    <div class="h-screen pt-[5em] story-content grid grid-rows-[5em,1fr,2fr]">
+      <div class="flex justify-between">
+        <p class="text-xl font-manrope-bold">01</p>
+        <h1 class="text-5xl font-manrope-light">STORY</h1>
+      </div>
+      <div class="bg-story-img bg-[url('/assets/img/home/2-story.png')] w-full h-64 bg-center">
 
-    <script>
-      function Menu(e){
-        let list = document.querySelector('ul');
-        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-      }
-    </script>
+      </div>
+      <div class="text-xs font-prompt font-prompt-reg leading-4 text-justify">
+        <p>
+          In the entertainment world, celebrities often show exaggerated versions 
+          of themselves to the public, concealing their true thoughts and struggles 
+          beneath elaborate lies. Fans buy into these fabrications, showering their 
+          idols with undying love and support, until something breaks the illusion. 
+          Sixteen-year-old rising star Ai Hoshino of pop idol group B Komachi has 
+          the world captivated; however, when she announces a hiatus due to health 
+          concerns, the news causes many to become worried.
+        </p>
+        <p class="mt-5">
+          As a huge fan of Ai, gynecologist Gorou Amemiya cheers her on from his 
+          countryside medical practice, wishing he could meet her in person one day. 
+          His wish comes true when Ai shows up at his hospital—not sick, but pregnant 
+          with twins! While the doctor promises Ai to safely deliver her children, 
+          he wonders if this encounter with the idol will forever change the nature 
+          of his relationship with her.
+        </p>
+        <a href="#">
+          Source: MyAnimeList
+        </a>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
