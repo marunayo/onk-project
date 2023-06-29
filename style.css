@@ -22,3 +22,8 @@
     background-size: cover;
     background-position: 70%;
 }
+
+.bg-story-img {
+    background-size: cover;
+    width: 100%;
+}
