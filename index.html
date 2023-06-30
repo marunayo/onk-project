@@ -10,8 +10,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Prompt:wght@200;300;400;500;600&display=swap');
     </style>
     <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -53,7 +52,8 @@
                 <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_black.png" alt="ONK Project">
               </span>
               <span class="nav-cta text-3xl" onclick="toggleMenu()">
-                <ion-icon name="menu"></ion-icon>
+                <!-- <ion-icon name="menu"></ion-icon> -->
+                <i data-feather="menu" class="stroke-2 w-5 h-5"></i>
               </span>
             </div>
             <!-- <div class="border-b-2 border-[#375C58] mt-5"></div> -->
@@ -95,7 +95,7 @@
   </header>
   
   <section class="h-screen px-4">
-    <div class="hero-content">
+    <div class="hero-content grid">
       <div class="self-end">
         <h1 class="font-manrope font-manrope-light text-7xl text-[#304B48] pr-10">THE LOVE <span class="text-[#FF00E5]">& LIES</span></h1>
       </div>
@@ -103,8 +103,8 @@
         <p>my star</p>
         <p>I'm gonna be your dream</p>
       </div>
-      <div class="bg-hero-img bg-[url('/assets/img/home/1-hero.png')]">
-        
+      <div class="bg-hero-img bg-[url('/assets/img/home/1-hero.png')] relative">
+        <i data-feather="arrow-down-left" class="absolute bottom-5 right-0 stroke-[0.75px] text-[#ECE2D5] w-32 h-32"></i>
       </div>
     </div>
   </section>
@@ -115,10 +115,10 @@
         <p class="text-xl font-manrope-bold">01</p>
         <h1 class="text-5xl font-manrope-light">STORY</h1>
       </div>
-      <div class="bg-story-img bg-[url('/assets/img/home/2-story.png')] w-full h-64 bg-center">
+      <div class="bg-story-img bg-[url('/assets/img/home/2-story.png')] w-full h-72 bg-center">
 
       </div>
-      <div class="text-xs font-prompt font-prompt-reg leading-4 text-justify">
+      <div class="text-xs font-prompt font-prompt-reg leading-4 text-justify pt-5">
         <p>
           In the entertainment world, celebrities often show exaggerated versions 
           of themselves to the public, concealing their true thoughts and struggles 
@@ -136,12 +136,63 @@
           he wonders if this encounter with the idol will forever change the nature 
           of his relationship with her.
         </p>
-        <a href="#">
-          Source: MyAnimeList
+        <a href="#" class="flex justify items-center gap-2">
+          <p class="font-prompt font-prompt-med">Source: MyAnimeList</p>
+          <i data-feather="arrow-right" class="stroke-2 w-5 h-5"></i>
         </a>
       </div>
     </div>
   </section>
 
+  <section class="px-4">
+    <div class="h-screen grid pt-[5em]">
+      <div class="flex justify-between">
+        <p class="text-xl font-manrope-bold">02</p>
+        <h1 class="text-5xl font-manrope-light">CHARACTER</h1>
+      </div>
+      <div>
+        <div class="grid grid-cols-2 grid=rows-3 gap-3">
+          <div class="w-full h-48 bg-blend-multiply">
+            <div class="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.5),rgba(255,0,229,0.3)),url('/assets/img/home/3-character-ai.png')] relative w-full h-full bg-cover">
+              <h5 class="absolute bottom-0 left-0 font-prompt font-prompt-light text-[#ECE2D5] text-xl">Hoshino Ai</h5>
+            </div>
+          </div>
+          <div class="w-full h-48">
+            <div class="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.5),rgba(255,0,229,0.3)),url('/assets/img/home/3-character-ruby.png')] relative w-full h-full bg-cover bg-center">
+              <h5 class="absolute bottom-0 left-0 font-prompt font-prompt-light text-[#ECE2D5] text-xl">Hoshino Ruby</h5>
+            </div>
+          </div>
+          <div class="w-full h-48">
+            <div class="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.5),rgba(255,0,229,0.3)),url('/assets/img/home/3-character-aqua.png')] relative w-full h-full bg-cover bg-center">
+              <h5 class="absolute bottom-0 left-0 font-prompt font-prompt-light text-[#ECE2D5] text-xl">Hoshino Aqua</h5>
+            </div>
+          </div>
+          <div class="w-full h-48">
+            <div class="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.5),rgba(255,0,229,0.3)),url('/assets/img/home/3-character-akane.png')] relative w-full h-full bg-cover bg-center">
+              <h5 class="absolute bottom-0 left-0 font-prompt font-prompt-light text-[#ECE2D5] text-xl">Kurokawa Akane</h5>
+            </div>
+          </div>
+          <div class="w-full h-48">
+            <div class="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.5),rgba(255,0,229,0.3)),url('/assets/img/home/3-character-kana.png')] relative w-full h-full bg-cover bg-center">
+              <h5 class="absolute bottom-0 left-0 font-prompt font-prompt-light text-[#ECE2D5] text-xl">Kana Arima</h5>
+            </div>
+          </div>
+          <div class="w-full h-48">
+            <div class="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.5),rgba(255,0,229,0.3)),url('/assets/img/home/3-character-cho.png')] relative w-full h-full bg-cover bg-center">
+              <h5 class="absolute bottom-0 left-0 font-prompt font-prompt-light text-[#ECE2D5] text-xl">Mem-cho</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <a href="#" class="font-prompt font-prompt-light"><p>More characters</p></a>
+        <i data-feather="arrow-right" class="stroke-2 w-5 h-5"></i>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    feather.replace()
+  </script>
 </body>
 </html>

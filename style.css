@@ -27,3 +27,8 @@
     background-size: cover;
     width: 100%;
 }
+
+.character-img-overlay {
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,0.5476718403547671) 0%, rgba(255,0,229,0.2505543237250555) 100%);
+}
