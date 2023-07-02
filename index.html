@@ -191,28 +191,82 @@
     </div>
   </section>
 
-  <section class="bg-[#473BAF] h-screen">
+  <section class="bg-[#473BAF] w-screen h-screen grid grid-rows-[2fr,1.5fr] content-center overflow-hidden">
     <div class="px-4">
       <div class="pt-[5em]">
         <div class="flex justify-between text-[#FF00E5]">
           <p class="text-xl font-manrope font-manrope-bold">03</p>
           <h1 class="text-5xl font-manrope font-manrope-light">MANGA</h1>
         </div>
-        <div class="manga-desc">
-          <p class="text-xs text-[#ECE2D5] font-prompt font-prompt-reg leading-4 text-justify">
-            Oshi no Ko【推しの子】, "My Favorite Idol" or "Their Idol's Children" is a 
-            Japanese manga series written by Aka Akasaka and illustrated by 
-            Mengo Yokoyari. It has been serialized in Shueisha's Weekly Young Jump 
-            since April 2020, with its chapters collected in 11 tankōbon volumes 
-            as of March 2023. It has been licensed for release in North America by 
-            Yen Press and simultaneously published by Shueisha on their Manga Plus 
-            platform.
-          </p>
-        </div>
-        <div>
-          <div>
-            <a href="#"><i data-feather="shopping-cart" class="stroke-2 w-5 h-5"></i> Store</a>
+        <div class="pt-[2.5em]">
+          <div class="manga-desc">
+            <p class="text-xs text-[#ECE2D5] font-prompt font-prompt-reg leading-4 text-justify">
+              Oshi no Ko【推しの子】, "My Favorite Idol" or "Their Idol's Children" is a 
+              Japanese manga series written by Aka Akasaka and illustrated by 
+              Mengo Yokoyari. It has been serialized in Shueisha's Weekly Young Jump 
+              since April 2020, with its chapters collected in 11 tankōbon volumes 
+              as of March 2023. It has been licensed for release in North America by 
+              Yen Press and simultaneously published by Shueisha on their Manga Plus 
+              platform.
+            </p>
           </div>
+          <div class="pt-[2.5em]">
+            <div class="border-y py-3">
+              <a href="#" class="px-2 flex gap-3 items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.09 10.6799V17.1H20.0445V19H0.954503V17.1H1.909V10.6799C1.32139 10.2895 0.839688 9.76082 0.506669 9.14068C0.17365 8.52054 -0.000389183 7.82816 6.53464e-07 7.125C6.53464e-07 6.33935 0.213809 5.5822 0.6042 4.93715L3.19281 0.475C3.27658 0.330585 3.39707 0.210662 3.54217 0.127282C3.68727 0.0439022 3.85186 4.23626e-06 4.01941 0H16.9806C17.1481 4.23626e-06 17.3127 0.0439022 17.4578 0.127282C17.6029 0.210662 17.7234 0.330585 17.8072 0.475L20.3872 4.9229C20.7862 5.5822 21 6.3384 21 7.125C21 8.607 20.2412 9.91325 19.09 10.6799ZM17.181 11.3734C16.5248 11.4467 15.8603 11.3682 15.2395 11.1441C14.6187 10.92 14.0582 10.5563 13.6017 10.0814C13.201 10.4985 12.7195 10.8305 12.1863 11.0573C11.6532 11.2841 11.0793 11.401 10.4995 11.401C9.91984 11.4012 9.3461 11.2846 8.81294 11.0582C8.27978 10.8317 7.79824 10.5001 7.39739 10.0833C6.94078 10.5581 6.38025 10.9216 5.75942 11.1455C5.13859 11.3694 4.47422 11.4477 3.81801 11.3743V17.1H17.181V11.3734ZM4.57111 1.9L2.24881 5.90235C2.0808 6.18346 1.97294 6.49609 1.932 6.82063C1.89105 7.14517 1.9179 7.47462 2.01087 7.78835C2.10383 8.10208 2.2609 8.39332 2.47224 8.6438C2.68358 8.89429 2.94462 9.09863 3.23901 9.24401C3.5334 9.3894 3.85479 9.4727 4.18303 9.48868C4.51128 9.50467 4.8393 9.453 5.14655 9.33692C5.45379 9.22083 5.73363 9.04284 5.96853 8.81408C6.20343 8.58533 6.38832 8.31075 6.51161 8.00755C6.83137 7.2124 7.96246 7.2124 8.28317 8.00755C8.46004 8.44875 8.76577 8.82702 9.16086 9.0935C9.55595 9.35998 10.0223 9.50242 10.4995 9.50242C10.9768 9.50242 11.4431 9.35998 11.8382 9.0935C12.2333 8.82702 12.539 8.44875 12.7159 8.00755C13.0356 7.2124 14.1667 7.2124 14.4874 8.00755C14.6113 8.31103 14.7969 8.58572 15.0326 8.81436C15.2683 9.043 15.5489 9.22065 15.8569 9.33614C16.1649 9.45163 16.4935 9.50247 16.8222 9.48545C17.1509 9.46843 17.4724 9.38393 17.7667 9.23725C18.061 9.09058 18.3216 8.8849 18.5322 8.63316C18.7427 8.38141 18.8987 8.08903 18.9903 7.7744C19.0818 7.45976 19.107 7.12968 19.0642 6.8049C19.0214 6.48012 18.9116 6.16765 18.7416 5.88715L16.427 1.9H4.57111Z" fill="#ECE2D5"/>
+                  </svg>
+                  <p class="font-prompt font-prompt-med text-[#ECE2D5]">
+                    Store
+                  </p>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L13 1M13 1V12.52M13 1H1.48" stroke="#ECE2D5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+            <div class="border-b py-3">
+              <a href="#" class="px-2 flex gap-3 items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C-1.95685e-08 11.3132 0.258658 12.6136 0.761205 13.8268C1.26375 15.0401 2.00035 16.1425 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C11.3132 20 12.6136 19.7413 13.8268 19.2388C15.0401 18.7362 16.1425 17.9997 17.0711 17.0711C17.9997 16.1425 18.7362 15.0401 19.2388 13.8268C19.7413 12.6136 20 11.3132 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 3.95203e-08 7.34784 0 10ZM18.8235 10C18.8235 12.3401 17.8939 14.5844 16.2392 16.2392C14.5844 17.8939 12.3401 18.8235 10 18.8235C7.65985 18.8235 5.41556 17.8939 3.76082 16.2392C2.10609 14.5844 1.17647 12.3401 1.17647 10C1.17647 7.65985 2.10609 5.41556 3.76082 3.76082C5.41556 2.10609 7.65985 1.17647 10 1.17647C12.3401 1.17647 14.5844 2.10609 16.2392 3.76082C17.8939 5.41556 18.8235 7.65985 18.8235 10Z" fill="#ECE2D5"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.88232 9.99996C5.88232 15.1717 7.57879 19.4117 9.99997 19.4117C12.4211 19.4117 14.1176 15.1717 14.1176 9.99996C14.1176 4.8282 12.4211 0.588196 9.99997 0.588196C7.57879 0.588196 5.88232 4.8282 5.88232 9.99996ZM12.9411 9.99996C12.9411 14.5753 11.4764 18.2353 9.99997 18.2353C8.5235 18.2353 7.05879 14.5753 7.05879 9.99996C7.05879 5.42467 8.5235 1.76467 9.99997 1.76467C11.4764 1.76467 12.9411 5.42467 12.9411 9.99996Z" fill="#ECE2D5"/>
+                    <path d="M2.62956 4.4847L3.41779 3.61176C3.54367 3.7247 3.67779 3.83528 3.82132 3.94234C5.37191 5.1047 7.81897 5.81293 10.486 5.81293C12.7601 5.81293 14.8825 5.29881 16.4331 4.41293C16.7903 4.21079 17.1279 3.97565 17.4413 3.71058L18.206 4.6047C17.8554 4.9047 17.4578 5.18117 17.0178 5.43293C15.2801 6.42705 12.9566 6.9894 10.486 6.9894C7.58014 6.9894 4.88367 6.2094 3.11544 4.88352C2.94742 4.75772 2.78529 4.62542 2.62956 4.4847ZM2.62956 15.5294L3.41779 16.4C3.54367 16.287 3.67779 16.1765 3.82132 16.0706C5.37191 14.9082 7.81897 14.2 10.486 14.2C12.7601 14.2 14.8825 14.7129 16.4331 15.6C16.8107 15.8165 17.1484 16.0518 17.4413 16.3012L18.206 15.407C17.8367 15.0945 17.4389 14.8172 17.0178 14.5788C15.2801 13.5859 12.9566 13.0235 10.486 13.0235C7.58014 13.0235 4.88367 13.8035 3.11544 15.1282C2.94367 15.2576 2.78132 15.3918 2.62956 15.5294ZM0.588379 10.5882V9.41175H19.4119V10.5882H0.588379Z" fill="#ECE2D5"/>
+                  </svg>
+                  <p class="font-prompt font-prompt-med text-[#ECE2D5]">Read Online</p>
+                </div>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L13 1M13 1V12.52M13 1H1.48" stroke="#ECE2D5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div class="w-full">
+      <div class="bg-[url('/assets/img/home/3-manga-ov-mob.png')] bg-cover bg-no-repeat bg-center">  
+    </div>
+  </section>
+
+  <section class="h-screen bg-[#FF00E5]">
+    <div class="px-4">
+      <div>
+        <div class="flex justify-between text-[#ECE2D5]">
+          <p class="text-xl font-manrope font-manrope-bold">04</p>
+          <h1 class="text-5xl font-manrope font-manrope-light">ANIME</h1>
+        </div>
+      </div>
+      <div>
+        <!-- VIDEO -->
+      </div>
+      <div>
+        <div>
+
+        </div>
+
+        <div>
+          
         </div>
       </div>
     </div>
