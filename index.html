@@ -42,16 +42,16 @@
 <body class="bg-[#ECE2D5]">
     
   <!-- NAVBAR -->
-  <header class="z-50 fixed">
+  <header class="z-50 sticky top-0">
     <div class="">
-      <div class="w-screen h-screen">
-        <div class="absolute w-full h-full">
+      <div class="relative w-screen">
+        <div class="absolute w-full">
           <div id="menu-cta" class="z-40 bg-[#ECE2D5] relative p-4 border-b-2 border-[#375C58]">
             <div class="flex justify-between items-center">
               <span class="logo">
                 <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_black.png" alt="ONK Project">
               </span>
-              <span class="nav-cta text-3xl" onclick="toggleMenu()">
+              <span class="nav-cta text-3xl pointer-events-auto" onclick="toggleMenu()">
                 <!-- <ion-icon name="menu"></ion-icon> -->
                 <i data-feather="menu" class="stroke-2 w-5 h-5"></i>
               </span>
@@ -59,7 +59,7 @@
             <!-- <div class="border-b-2 border-[#375C58] mt-5"></div> -->
           </div>
   
-          <nav id="mobile-menu" class="z-30 bg-[#ECE2D5] relative -top-full left-0 h-full px-4">
+          <nav id="mobile-menu" class="z-30 bg-[#ECE2D5] relative -top-full left-0 h-screen px-4">
             <!-- <div class="border-b-2 border-[#375C58]"></div> -->
             <ul class="grid gap-8 pt-5">
               <li class="font-prompt">
@@ -94,7 +94,7 @@
     </div>
   </header>
   
-  <section class="h-screen px-4">
+  <section class="h-screen px-4 z-40">
     <div class="hero-content grid">
       <div class="self-end">
         <h1 class="font-manrope font-manrope-light text-7xl text-[#304B48] pr-10">THE LOVE <span class="text-[#FF00E5]">& LIES</span></h1>
@@ -244,13 +244,14 @@
           </div>
         </div>
       </div>
-    </div class="w-full">
-      <div class="bg-[url('/assets/img/home/3-manga-ov-mob.png')] bg-cover bg-no-repeat bg-center">  
     </div>
+    <!-- </div class="w-full">
+      <div class="bg-[url('/assets/img/home/3-manga-ov-mob.png')] bg-cover bg-no-repeat bg-center">  
+    </div> -->
   </section>
 
-  <section class="h-screen bg-[#FF00E5]">
-    <div class="px-4">
+  <div class="px-4 h-screen w-screen bg-[#FF00E5]">
+    <div>
       <div>
         <div class="flex justify-between text-[#ECE2D5]">
           <p class="text-xl font-manrope font-manrope-bold">04</p>
@@ -258,19 +259,47 @@
         </div>
       </div>
       <div>
-        <!-- VIDEO -->
+        <iframe class="w-full" width="560" height="315" src="https://www.youtube.com/embed/zntY4A4GPU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div>
-        <div>
-
+        <div class="flex flex-col w-full">
+          <div class="py-2 grid grid-cols-[minmax(150px,max-content),1fr] border-b border-[#ECE2D5] font-prompt font-prompt-reg text-[#ECE2D5]">
+            <p class="text-left">Title</p>
+            <p class="text-left">【推しの子】/ Oshi no Ko (TV)</p>
+          </div>
+          <div class="py-2 grid grid-cols-[minmax(150px,max-content),1fr] border-b border-[#ECE2D5] font-prompt font-prompt-reg text-[#ECE2D5]">
+            <p class="text-left">Episodes</p>
+            <p class="text-left">12</p>
+          </div>
+          <div class="py-2 grid grid-cols-[minmax(150px,max-content),1fr] border-b border-[#ECE2D5] font-prompt font-prompt-reg text-[#ECE2D5]">
+            <p class="text-left">Aired/Status</p>
+            <p class="text-left">Apr 12, 2023/Complete</p>
+          </div>
+          <div class="py-2 grid grid-cols-[minmax(150px,max-content),1fr] border-b border-[#ECE2D5] font-prompt font-prompt-reg text-[#ECE2D5]">
+            <p class="text-left">Producers</p>
+            <p class="text-left">Shueisha, CyberAgent, Kadokawa</p>
+          </div>
+          <div class="py-2 grid grid-cols-[minmax(150px,max-content),1fr] border-b border-[#ECE2D5] font-prompt font-prompt-reg text-[#ECE2D5]">
+            <p class="text-left">Studios</p>
+            <p class="text-left">Doga Kobo</p>
+          </div>
+          <div class="py-2 grid grid-cols-[minmax(150px,max-content),1fr] border-b border-[#ECE2D5] font-prompt font-prompt-reg text-[#ECE2D5]">
+            <p class="text-left">Rating</p>
+            <p class="text-left">PG-13 - Teens 13 or older</p>
+          </div>
         </div>
 
         <div>
-          
+          <p>Available on</p>
+          <div class="grid grid-cols-3 gap-2 items-center">
+            <img src="/assets/img/brand/netflix logo.png" alt="" class="drop-shadow-lg">
+            <img src="/assets/img/brand/crunchyroll logo.png" alt="" class="drop-shadow-lg">
+            <img src="/assets/img/brand/hidive logo.png" alt="" class="drop-shadow-lg">
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <script>
     feather.replace()
