@@ -8,19 +8,21 @@
 function toggleMenu() {
     const borderMenu = document.getElementById("menu-cta");
     const mobileMenu = document.getElementById("mobile-menu");
-    const isOpen = mobileMenu.classList.contains("-top-full");
+    const mobileMenuItems = document.getElementById("mobile-menu-items");
 
-    if (isOpen) {
+    const isClose = mobileMenu.classList.contains("hidden");
+
+    if (isClose) {
         borderMenu.classList.remove("border-b-2");
-        mobileMenu.classList.remove("-top-full");
         mobileMenu.classList.remove("hidden");
-        mobileMenu.classList.add("top-0");
+        mobileMenuItems.classList.remove("-top-full");
         mobileMenu.classList.add("block");
+        mobileMenuItems.classList.add("top-0");
     } else {
-        mobileMenu.classList.remove("top-0");
-        mobileMenu.classList.remove("block");
         borderMenu.classList.add("border-b-2");
-        mobileMenu.classList.add("-top-full");
+        mobileMenu.classList.remove("block");
+        mobileMenuItems.classList.remove("top-0");
         mobileMenu.classList.add("hidden");
+        mobileMenuItems.classList.add("-top-full");
     }
 }

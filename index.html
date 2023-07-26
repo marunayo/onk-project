@@ -51,7 +51,7 @@
               <span class="logo">
                 <img class="w-24" src="/assets/img/Oshi_no_Ko_logo_black.png" alt="ONK Project">
               </span>
-              <span class="nav-cta text-3xl pointer-events-auto" onclick="toggleMenu()">
+              <span class="nav-cta text-3xl" onclick="toggleMenu()">
                 <!-- <ion-icon name="menu"></ion-icon> -->
                 <i data-feather="menu" class="stroke-2 w-5 h-5"></i>
               </span>
@@ -59,35 +59,36 @@
             <!-- <div class="border-b-2 border-[#375C58] mt-5"></div> -->
           </div>
   
-          <nav id="mobile-menu" class="z-30 bg-[#ECE2D5] relative -top-full left-0 h-screen px-4">
-            <!-- <div class="border-b-2 border-[#375C58]"></div> -->
-            <ul class="grid gap-8 pt-5">
-              <li class="font-prompt">
-                <p class="font-prompt-smbold text-xl mb-1">01</p>
-                <a href="#" class="font-prompt-exlight text-5xl">STORY</a>
-              </li>
-              <li class="font-prompt">
-                <p class="font-prompt-smbold text-xl mb-1">02</p>
-                <a href="#" class="font-prompt-exlight text-5xl">CHARACTER</a>
-              </li>
-              <li class="font-prompt">
-                <p class="font-prompt-smbold text-xl mb-1">03</p>
-                <a href="#" class="font-prompt-exlight text-5xl">MANGA</a>
-              </li>
-              <li class="font-prompt">
-                <p class="font-prompt-smbold text-xl mb-1">04</p>
-                <a href="#" class="font-prompt-exlight text-5xl">ANIME</a>
-              </li>
-              <li class="font-prompt">
-                <p class="font-prompt-smbold text-xl mb-1">05</p>
-                <a href="#" class="font-prompt-exlight text-5xl">MANGA</a>
-              </li>
-            </ul>
-            <div class="flex justify-between items-center pt-[4em]">
-              <img class="w-24" src="/assets/img/dev/MDVR Logo 1.png" alt="MDVR Logo">
-              <p class="font-manrope font-manrope-reg text-xs">©️ 2023 Marudever.</p>
+          <nav id="mobile-menu" class="z-30 relative left-0 w-screen h-screen px-4 hidden">
+            <div id="mobile-menu-items" class="bg-[#ECE2D5] w-full h-full px-4 absolute -top-full left-0 block">
+              <ul class="grid gap-8 pt-5">
+                <li class="font-prompt">
+                  <p class="font-prompt-smbold text-xl mb-1">01</p>
+                  <a href="#" class="font-prompt-exlight text-5xl">STORY</a>
+                </li>
+                <li class="font-prompt">
+                  <p class="font-prompt-smbold text-xl mb-1">02</p>
+                  <a href="#" class="font-prompt-exlight text-5xl">CHARACTER</a>
+                </li>
+                <li class="font-prompt">
+                  <p class="font-prompt-smbold text-xl mb-1">03</p>
+                  <a href="#" class="font-prompt-exlight text-5xl">MANGA</a>
+                </li>
+                <li class="font-prompt">
+                  <p class="font-prompt-smbold text-xl mb-1">04</p>
+                  <a href="#" class="font-prompt-exlight text-5xl">ANIME</a>
+                </li>
+                <li class="font-prompt">
+                  <p class="font-prompt-smbold text-xl mb-1">05</p>
+                  <a href="#" class="font-prompt-exlight text-5xl">MANGA</a>
+                </li>
+              </ul>
+              <div class="flex justify-between items-center pt-[4em]">
+                <img class="w-24" src="/assets/img/dev/MDVR Logo 1.png" alt="MDVR Logo">
+                <p class="font-manrope font-manrope-reg text-xs">©️ 2023 Marudever.</p>
+              </div>
+              <div class="border-b-2 border-[#375C58] pt-[3.5em]"></div>
             </div>
-            <div class="border-b-2 border-[#375C58] pt-[3.5em]"></div>
           </nav>
         </div>
       </div>

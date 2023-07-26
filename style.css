@@ -6,6 +6,12 @@
 
 #mobile-menu {
     transition: top 0.5s ease;
+    transition: block 0.5s ease 0.5s;
+    transition: hidden 0.5s ease 0.5s;
+}
+
+#mobile-menu-items {
+    transition: top 0.5s ease;
 }
 
 #menu-cta {
